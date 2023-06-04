@@ -31,7 +31,7 @@ function onClick(event) {
 
 
 gallery.addEventListener("keydown", onEscape);
-instance.element.addEventListener('click', modalClose);
+instance.element().addEventListener('click', modalClose);
 function modalClose() {
   instance.close();
   gallery.removeEventListener('keydown', onEscape);
@@ -43,6 +43,7 @@ function modalClose() {
     }
   }
 };
+
 
 
 
